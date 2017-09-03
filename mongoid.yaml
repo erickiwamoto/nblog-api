@@ -7,12 +7,3 @@ development:
             options:
                 user: dev-app
                 password: dev#123
-qa:
-    clients:
-        default:
-            database: nblog-qa
-            hosts:
-                - ''
-            options:
-                user: qa-app
-                password: qa#123
