@@ -1,9 +1,18 @@
 development:
     clients:
         default:
-            database: nblog-dev
+            database: nblog-dev-erick
             hosts:
-                - 'ds151141.mlab.com:51141'
+                - 'ds123084.mlab.com:23084'
             options:
                 user: dev-app
                 password: dev#123
+qa:
+    clients:
+        default:
+            database: nblog-qa-erick
+            hosts:
+                - 'ds139360.mlab.com:39360'
+            options:
+                user: qa-app
+                password: qa#123
