@@ -1,7 +1,7 @@
 node {
     try {
         stage('Build') {
-            git credentialsId: '270b889b-fbdc-4ff9-978f-48a39f0e296d', url: 'git@github.com:papitoio/nblog-api.git'
+            git credentialsId: '', url: 'git@github.com:erickiwamoto/nblog-api.git'
             env.RACK_ENV = 'development'
             ruby('bundle install --with test')
             ruby('rspec --format progress --format RspecJunitFormatter --out results/rspec.xml')
@@ -44,14 +44,14 @@ def ruby(String commands) {
 
 def deploy(String env) {
     sh 'rm -rf .git && git init'
-    sh "heroku git:remote -a nblog-api-${env}"
+    sh "heroku git:remote -a nblog-api-${env}-erick"
     sh "git add . && git commit -m 'deploy'"
     sh "git push heroku master --force"
 }
 
 def deploy_prod() {
     sh 'rm -rf .git && git init'
-    sh "heroku git:remote -a nblog-api"
+    sh "heroku git:remote -a nblog-api-erick"
     sh "git add . && git commit -m 'deploy'"
     sh "git push heroku master --force"
 }

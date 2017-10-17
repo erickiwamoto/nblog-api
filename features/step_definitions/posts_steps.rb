@@ -3,7 +3,7 @@
 Dado(/^que o usuário informou o título e descrição do artigo$/) do
   @request = {
     title: 'Executando Testes no Capybara com Chrome Headless',
-    image: 'http://qaninja.com.br/static/nblog/headless.png',
+    image: Faker::LoremPixel.image,
     body: "#{$env.upcase} - #{Faker::Lorem.paragraph(2)}"
   }
 end
@@ -52,7 +52,7 @@ end
 Quando(/^o módulo admin envia um PUT para o serviço Posts$/) do
   @request = {
     title: 'Choco, um jeito doce de instalar coisas no Windows',
-    image: 'http://qaninja.com.br/static/nblog/choco.png',
+    image: Faker::LoremPixel.image,
     body: "#{$env.upcase} - #{Faker::Lorem.paragraph(2)}"
   }
   put '/api/posts/' + @post_id.to_s, @request.to_json

@@ -1,6 +1,6 @@
 
 ---
-default: -p qa
+default: -p qa -p json -p html
 qa: RACK_ENV=qa --format progress -p json -p junit
 uat: RACK_ENV=uat --format progress
 production: RACK_ENV=production
