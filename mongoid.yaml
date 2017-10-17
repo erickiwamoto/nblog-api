@@ -16,3 +16,12 @@ qa:
             options:
                 user: qa-app
                 password: qa#123
+uat:
+    clients:
+            default:
+                database: nblog-uat-erick
+                hosts:
+                    - 'ds121665.mlab.com:21665'
+                options:
+                    user: uat-app
+                    password: uat#123
