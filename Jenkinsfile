@@ -15,7 +15,7 @@ node {
             echo 'test'
             ruby('cucumber')
             cucumber '**/*.json'
-            junit 'results/*.xml'
+            junit 'results/TEST-*.xml'
         }
         stage('Deploy to UAT') {
             echo 'deploy on heroku'
