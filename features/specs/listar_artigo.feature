@@ -10,7 +10,7 @@ Funcionalidade: Listar artigos
     Cenário: Listar artigos
 
         Quando o módulo admin enviar um GET para o serviço Posts
-        Então o código de resposta deve ser "200"
+        Então o código de resposta deve ser "201"
             E o Json response deve conter uma lista de artigos
 
     @error
