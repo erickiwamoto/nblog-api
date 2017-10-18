@@ -25,3 +25,12 @@ uat:
                 options:
                     user: uat-app
                     password: uat#123
+production:
+    clients:
+            default:
+                database: nblog-prod-erick
+                hosts:
+                    - ds121955.mlab.com:21955'
+                options:
+                    user: production-app
+                    password: production#123

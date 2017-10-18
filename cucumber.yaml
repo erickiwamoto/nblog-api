@@ -1,7 +1,7 @@
 
 ---
-default: -p qa -p json -p html
-qa: RACK_ENV=qa --format progress -p json -p junit
+default: -p qa 
+qa: RACK_ENV=qa --format progress -p json 
 uat: RACK_ENV=uat --format progress
 production: RACK_ENV=production
 json: --format json --out=features.json
