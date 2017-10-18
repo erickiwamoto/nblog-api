@@ -2,7 +2,7 @@
 # Created by https://www.gitignore.io/api/ruby,macos
 
 ## Custom ##
-unit_tests.xml
+rspec.xml
 features.html
 features.json
 results/*.json
