@@ -13,7 +13,7 @@ describe 'nBlog Api' do
           body: Faker::Lorem.paragraph
         }
         post 'api/posts', request.to_json
-        expect_status(200)
+        expect_status(201)
       end
     end
   end
